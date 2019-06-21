@@ -70,7 +70,7 @@ class ScannerVC: UIViewController {
                 frontCamera = device
             }
         }
-        currentCamera = frontCamera
+        currentCamera =  backCamera
     }
 
     func setupInputAndOutput() {
@@ -113,7 +113,11 @@ extension ScannerVC: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation() {
             let temp = UIImage(data: imageData)
-            self.image = UIImage(cgImage: temp!.cgImage!, scale: temp!.scale, orientation: .leftMirrored)
+            if currentCamera == backCamera {
+                image = temp
+            } else {
+                self.image = UIImage(cgImage: temp!.cgImage!, scale: temp!.scale, orientation: .leftMirrored)
+            }
             let vc = ShowPhotoVC()
             vc.photo = self.image
             self.navigationController?.pushViewController(vc, animated: true)
