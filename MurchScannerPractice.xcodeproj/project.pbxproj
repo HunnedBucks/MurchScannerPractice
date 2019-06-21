@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7109EC4322BD44DB007AF14C /* MachineLearningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109EC4222BD44DB007AF14C /* MachineLearningModel.swift */; };
+		7109EC4522BD4529007AF14C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109EC4422BD4529007AF14C /* FirstViewController.swift */; };
 		715F02A322BCBF54000996E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02A222BCBF54000996E8 /* AppDelegate.swift */; };
 		715F02AA22BCBF57000996E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715F02A922BCBF57000996E8 /* Assets.xcassets */; };
 		715F02AD22BCBF57000996E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F02AB22BCBF57000996E8 /* LaunchScreen.storyboard */; };
 		715F02C322BCD605000996E8 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02BE22BCD605000996E8 /* ScannerVC.swift */; };
 		715F02C922BCD9A9000996E8 /* ShowPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */; };
-		715F02D022BCD9D4000996E8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02CF22BCD9D4000996E8 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7109EC4222BD44DB007AF14C /* MachineLearningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineLearningModel.swift; sourceTree = "<group>"; };
+		7109EC4422BD4529007AF14C /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		715F029F22BCBF54000996E8 /* MurchScannerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MurchScannerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715F02A222BCBF54000996E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		715F02A922BCBF57000996E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,7 +26,6 @@
 		715F02AE22BCBF57000996E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715F02BE22BCD605000996E8 /* ScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoVC.swift; sourceTree = "<group>"; };
-		715F02CF22BCD9D4000996E8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../../../CameraTest/CameraTest/view/FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +70,10 @@
 		715F02CA22BCD9B0000996E8 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7109EC4422BD4529007AF14C /* FirstViewController.swift */,
 				715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */,
-				715F02CF22BCD9D4000996E8 /* FirstViewController.swift */,
 				715F02BE22BCD605000996E8 /* ScannerVC.swift */,
+				7109EC4222BD44DB007AF14C /* MachineLearningModel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -145,10 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				715F02D022BCD9D4000996E8 /* FirstViewController.swift in Sources */,
+				7109EC4522BD4529007AF14C /* FirstViewController.swift in Sources */,
 				715F02C922BCD9A9000996E8 /* ShowPhotoVC.swift in Sources */,
 				715F02C322BCD605000996E8 /* ScannerVC.swift in Sources */,
 				715F02A322BCBF54000996E8 /* AppDelegate.swift in Sources */,
+				7109EC4322BD44DB007AF14C /* MachineLearningModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
