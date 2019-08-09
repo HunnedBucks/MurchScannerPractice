@@ -130,7 +130,6 @@ extension ImageRecognitionVC: AVCaptureVideoDataOutputSampleBufferDelegate {
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         guard let model = try? VNCoreMLModel(for: Resnet50().model ) else { return }
         let request = VNCoreMLRequest(model: model) { (finishedReq, err) in
-           // print(finishedReq.results)
             guard let results = finishedReq.results as? [VNClassificationObservation] else { return }
             guard let firstObservation = results.first else { return }
             print(firstObservation.identifier, firstObservation.confidence)
