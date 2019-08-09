@@ -13,6 +13,8 @@
 		715F02AD22BCBF57000996E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F02AB22BCBF57000996E8 /* LaunchScreen.storyboard */; };
 		715F02C322BCD605000996E8 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02BE22BCD605000996E8 /* ScannerVC.swift */; };
 		715F02C922BCD9A9000996E8 /* ShowPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */; };
+		71D6658B22FDF8A6006A4AD7 /* ImageRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D6658A22FDF8A6006A4AD7 /* ImageRecognitionVC.swift */; };
+		71D6658D22FDF9B7006A4AD7 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 71D6658C22FDF9B7006A4AD7 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		715F02AE22BCBF57000996E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715F02BE22BCD605000996E8 /* ScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoVC.swift; sourceTree = "<group>"; };
+		71D6658A22FDF8A6006A4AD7 /* ImageRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognitionVC.swift; sourceTree = "<group>"; };
+		71D6658C22FDF9B7006A4AD7 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		715F02A122BCBF54000996E8 /* MurchScannerPractice */ = {
 			isa = PBXGroup;
 			children = (
-				715F02CA22BCD9B0000996E8 /* view */,
 				715F02A222BCBF54000996E8 /* AppDelegate.swift */,
+				71D6658C22FDF9B7006A4AD7 /* Resnet50.mlmodel */,
+				715F02CA22BCD9B0000996E8 /* view */,
 				715F02A922BCBF57000996E8 /* Assets.xcassets */,
 				715F02AB22BCBF57000996E8 /* LaunchScreen.storyboard */,
 				715F02AE22BCBF57000996E8 /* Info.plist */,
@@ -71,6 +76,7 @@
 				7109EC4422BD4529007AF14C /* FirstViewController.swift */,
 				715F02C822BCD9A9000996E8 /* ShowPhotoVC.swift */,
 				715F02BE22BCD605000996E8 /* ScannerVC.swift */,
+				71D6658A22FDF8A6006A4AD7 /* ImageRecognitionVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			files = (
 				7109EC4522BD4529007AF14C /* FirstViewController.swift in Sources */,
 				715F02C922BCD9A9000996E8 /* ShowPhotoVC.swift in Sources */,
+				71D6658B22FDF8A6006A4AD7 /* ImageRecognitionVC.swift in Sources */,
 				715F02C322BCD605000996E8 /* ScannerVC.swift in Sources */,
+				71D6658D22FDF9B7006A4AD7 /* Resnet50.mlmodel in Sources */,
 				715F02A322BCBF54000996E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
